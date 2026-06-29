@@ -14,7 +14,7 @@ app = FastAPI(title="Personal Dashboard API", version="1.0.0")
 # CORS middleware - Enforcing Security Policy
 app.add_middleware(
     CORSMiddleware,
-    allow_orgins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
